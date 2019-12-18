@@ -1,0 +1,2 @@
+INSERT INTO testTable (title, img, date, author, ingress, content, category, rating) VALUES
+("test","test","test","test","test","test","kultur", 1),("test2","test2","test2","test2","test2","test2","sport", 2)

@@ -1,0 +1,37 @@
+POST http://localhost:3001/article
+Content-Type: application/json
+
+{
+    "title": "title1",
+    "img": "/landscape1.png",
+    "author": "Geogebro Trigonometrisen",
+    "date": "29.10.2019, 14:23",
+    "ingress": "ingress1",
+    "content": "'Content1'",
+    "category": 0,
+    "rating": 1
+}
+
+###
+PUT http://localhost:3001/article/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "title2",
+    "img": "/landscape1.png",
+    "author": "Matt Labsen",
+    "date": "29.10.2019, 14:23",
+    "ingress": "ingress2",
+    "content": "'Content2'",
+    "category": 2,
+    "rating": 1
+}
+
+###
+GET http://localhost:3001/article
+
+###
+GET http://localhost:3001/article/last HTTP/1.1
+
+###
+DELETE http://localhost:3001/article/1 HTTP/1.1
